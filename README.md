@@ -1,6 +1,6 @@
 #AnglarTask Module
 
-This project was using firebase api to perform Signup, Signin, Change Password & Reset Password Request
+This project was using firebase api to perform Signup, Signin, Change Password & Reset Password Request.
 You may signup with your email and Login with the email registered. 
 The reset password email will take around 1-2 minutes to receive.
 
