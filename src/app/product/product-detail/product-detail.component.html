@@ -1,0 +1,41 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12" style="text-align: center;">
+            <h2>{{ productData.name }}</h2>
+        </div>
+        <div class="col-md-12" style="text-align: center;">
+            <img [src]="productData.imagePath" alt="{{ productData.name }}"
+             class="img-responsive" style="max-height: 225px;">
+        </div>
+    </div>
+    
+    <div class="row desc">
+        <div class="col-md-2 desc-left">
+            Description
+        </div>
+        <div class="col-md-10">
+            {{ productData.description }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12" style="background-color:#0039e6;">
+            <b>Variance</b>
+        </div>
+    </div>
+
+    <div class="row variance" *ngFor="let item of productData.productVariance">
+        <div class="col-md-2 variance-info">
+            {{ item.info }}
+        </div>
+        <div class="col-md-2">
+            RM {{ item.price }}
+        </div>
+    </div>
+    <br>
+    <div>
+        <button style="float: right;" class="btn btn-primary" type="button" 
+         routerLink="/product">Back</button>
+    </div>
+</div>
+  

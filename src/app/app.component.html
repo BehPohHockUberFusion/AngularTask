@@ -1,0 +1,11 @@
+<app-header></app-header>
+
+<ng-container *ngIf="authService.isAuthenticated(); else defaultRoute">
+    <div style="padding-left: 200px;">
+        <router-outlet></router-outlet>
+    </div>
+</ng-container>
+  
+<ng-template #defaultRoute>
+    <router-outlet></router-outlet>
+</ng-template>
